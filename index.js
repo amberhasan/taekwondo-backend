@@ -7,22 +7,32 @@ const port = 3000;
 const users = [
   {
     id: 1,
-    name: "Safdar",
+    firstName: "Safdar",
     lastName: "Sikander",
   },
 ];
 
 // http://127.0.0.1:3000/
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+app.get("/", (request, response) => {
+  response.send("Hello World!");
 });
 
-app.get("/users", (req, res) => {
-  res.send(users);
+app.get("/users", (request, response) => {
+  response.send(users);
 });
 
-app.post("/users", (req, res) => {
-  console.log("req.body", req.body);
+app.post("/users", (request, response) => {
+  console.log("request.body", request.body);
+  if (!request.body.firstName || !request.body.lastName) {
+    return response.send("First Name and Last name is required");
+  }
+  const user = {
+    id: users.length + 1,
+    firstName: request.body.firstName,
+    lastName: request.body.lastName,
+  };
+  users.push(user);
+  response.send(user);
 });
 
 // get
