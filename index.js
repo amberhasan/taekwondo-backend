@@ -40,8 +40,9 @@ app.post("/users", (request, response) => {
 
 app.get("/users/:id", (request, response) => {
   const id = request.params.id;
-  console.log("id", id);
-  response.send(id);
+  const user = users.filter((user) => user.id == id);
+  console.log("user", user);
+  response.json(user);
 });
 
 // get
