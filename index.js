@@ -24,7 +24,10 @@ app.get("/users", (request, response) => {
 app.post("/users", (request, response) => {
   console.log("request.body", request.body);
   if (!request.body.firstName || !request.body.lastName) {
-    return response.send("First Name and Last name is required");
+    return response.status(400).json({
+      message: "First Name and Last name is required",
+      statusCode: "400",
+    });
   }
   const user = {
     id: users.length + 1,
