@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json()); //this tells the app to use JSON to pass the body during requests like POST
 const port = 3000;
 
-const users = [
+let users = [
   {
     id: 1,
     firstName: "Safdar",
@@ -40,9 +40,50 @@ app.post("/users", (request, response) => {
 
 app.get("/users/:id", (request, response) => {
   const id = request.params.id;
-  const user = users.filter((user) => user.id == id);
+  const user = users.find((user) => user.id == id);
+  if (!user) {
+    return response.status(404).json({
+      message: "User not found with given ID",
+      statusCode: "404",
+    });
+  }
   console.log("user", user);
   response.json(user);
+});
+
+//Does not create a new record if the record doesn't already exist. Must provide ID.
+app.put("/users/:id", (request, response) => {
+  console.log("request.body", request.body);
+  const id = request.params.id;
+  if (!request.body.firstName || !request.body.lastName) {
+    return response.status(400).json({
+      message: "First Name and Last name is required",
+      statusCode: "400",
+    });
+  }
+  const user = users.find((user) => user.id == id);
+  if (!user) {
+    return response.status(404).json({
+      message: "User not found with given ID",
+      statusCode: "404",
+    });
+  }
+  const newUser = {
+    id,
+    firstName: request.body.firstName,
+    lastName: request.body.lastName,
+  };
+  users = users.map((user) => {
+    if (user.id === id) {
+      return newUser;
+    }
+    return user;
+  });
+
+  response.status(200).json({
+    message: "user is updated",
+    user: newUser,
+  });
 });
 
 // get
