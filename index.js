@@ -35,7 +35,13 @@ app.post("/users", (request, response) => {
     lastName: request.body.lastName,
   };
   users.push(user);
-  response.send(user);
+  response.status(201).json(user);
+});
+
+app.get("/users/:id", (request, response) => {
+  const id = request.params.id;
+  console.log("id", id);
+  response.send(id);
 });
 
 // get
