@@ -53,7 +53,6 @@ app.get("/users/:id", (request, response) => {
 
 //Does not create a new record if the record doesn't already exist. Must provide ID.
 app.put("/users/:id", (request, response) => {
-  console.log("request.body", request.body);
   const id = request.params.id;
   if (!request.body.firstName || !request.body.lastName) {
     return response.status(400).json({
@@ -74,15 +73,31 @@ app.put("/users/:id", (request, response) => {
     lastName: request.body.lastName,
   };
   users = users.map((user) => {
-    if (user.id === id) {
+    if (user.id == id) {
       return newUser;
     }
     return user;
   });
+  console.log("users", users);
 
   response.status(200).json({
     message: "user is updated",
     user: newUser,
+  });
+});
+
+app.delete("/users/:id", (request, response) => {
+  const id = request.params.id;
+  const user = users.find((user) => user.id == id);
+  if (!user) {
+    return response.status(404).json({
+      message: "User not found with given ID",
+      statusCode: "404",
+    });
+  }
+  users = users.filter((user) => user.id != id);
+  response.status(200).json({
+    message: "user has been deleted",
   });
 });
 
