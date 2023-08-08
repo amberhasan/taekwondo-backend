@@ -61,20 +61,8 @@ const menu = [
 const belt_test_requirements = [
   {
     belt_test_requirements: {
-        white: {
-          junior: {
-
-          palgwae: [],
-          taeguek: [],
-          white_belt_form: [1, 2],
-          combination: [1, 2, 3, 4, 5],
-          step_match: [1, 2],
-          kick: ["front kick", "turn kick"],
-          sparring: "1:1",
-          breaking: ["palm", "front kick"],
-        },
+      white: {
         junior: {
-
           palgwae: [],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -84,10 +72,19 @@ const belt_test_requirements = [
           sparring: "1:1",
           breaking: ["palm", "front kick"],
         },
-      }
-        white_yellow_stripe: {
-          junior: {
-
+        senior: {
+          palgwae: [],
+          taeguek: [],
+          white_belt_form: [1, 2],
+          combination: [1, 2, 3, 4, 5],
+          step_match: [1, 2],
+          kick: ["front kick", "turn kick"],
+          sparring: "1:1",
+          breaking: ["palm", "front kick"],
+        },
+      },
+      white_yellow_stripe: {
+        junior: {
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -98,7 +95,6 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
         senior: {
-
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -109,9 +105,8 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
       },
-        yellow: {
-          junior: {
-
+      yellow: {
+        junior: {
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -122,7 +117,6 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
         senior: {
-
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -133,9 +127,8 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
       },
-        green: {
-          junior: {
-
+      green: {
+        junior: {
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -146,7 +139,6 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
         senior: {
-
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -157,9 +149,8 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
       },
-        blue: {
-          junior: {
-
+      blue: {
+        junior: {
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -170,7 +161,6 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
         senior: {
-
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -181,9 +171,8 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
       },
-        red: {
-          junior: {
-
+      red: {
+        junior: {
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -194,7 +183,6 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
         senior: {
-
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -205,9 +193,8 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
       },
-        first_dan_evaluation: {
-          junior: {
-
+      first_dan_evaluation: {
+        junior: {
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -218,7 +205,6 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
         senior: {
-
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -229,8 +215,8 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
       },
-    }
-  }
+    },
+  },
 ];
 
 const belt_colors = [
