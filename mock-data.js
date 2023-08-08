@@ -14,7 +14,6 @@ const menu = [
   },
   {
     id: 3,
-
     title: "Adult/Teen Classes",
     description:
       "Classes for teens and adults 11-65+ who want to learn Taekwondo",
@@ -22,14 +21,12 @@ const menu = [
   },
   {
     id: 4,
-
     title: "Demo Team",
     description: "Our Taekwondo school's demonstration team",
     image: "https://leesustaekwondo.com/assets/img/homepage/hp13.webp",
   },
   {
     id: 5,
-
     title: "Poomsae Team",
     description:
       "For students with the desire to compete at a professional level",
@@ -37,28 +34,24 @@ const menu = [
   },
   {
     id: 6,
-
     title: "Our School Championship",
     description: "Our Taekwondo school's yearly competition",
     image: "https://leesustaekwondo.com/assets/img/homepage/hp13.webp",
   },
   {
     id: 7,
-
     title: "Summer Reading Program",
     description: "Learn about the program and download the reading log",
     image: "https://leesustaekwondo.com/assets/img/homepage/hp13.webp",
   },
   {
     id: 8,
-
     title: "Birthday Parties",
     description: "Learn more about having a birthday party with Taekwondo",
     image: "https://leesustaekwondo.com/assets/img/homepage/hp13.webp",
   },
   {
     id: 9,
-
     title: "Belt Requirements",
     description: "For current students",
     image: "https://leesustaekwondo.com/assets/img/homepage/hp13.webp",
@@ -68,8 +61,9 @@ const menu = [
 const belt_test_requirements = [
   {
     belt_test_requirements: {
-      junior: {
         white: {
+          junior: {
+
           palgwae: [],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -79,7 +73,21 @@ const belt_test_requirements = [
           sparring: "1:1",
           breaking: ["palm", "front kick"],
         },
+        junior: {
+
+          palgwae: [],
+          taeguek: [],
+          white_belt_form: [1, 2],
+          combination: [1, 2, 3, 4, 5],
+          step_match: [1, 2],
+          kick: ["front kick", "turn kick"],
+          sparring: "1:1",
+          breaking: ["palm", "front kick"],
+        },
+      }
         white_yellow_stripe: {
+          junior: {
+
           palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
@@ -89,48 +97,9 @@ const belt_test_requirements = [
           sparring: "1:1",
           breaking: ["palm", "front kick"],
         },
-        yellow: {
-          palgwae: [],
-          taeguek: [],
-          white_belt_form: [1, 2],
-          combination: [1, 2, 3, 4, 5],
-          step_match: [1, 2],
-          kick: ["front kick", "turn kick"],
-          sparring: "1:1",
-          breaking: ["palm", "front kick"],
-        },
-        green: {
-          palgwae: [],
-          taeguek: [],
-          white_belt_form: [1, 2],
-          combination: [1, 2, 3, 4, 5],
-          step_match: [1, 2],
-          kick: ["front kick", "turn kick"],
-          sparring: "1:1",
-          breaking: ["palm", "front kick"],
-        },
-        blue: {
-          palgwae: [],
-          taeguek: [],
-          white_belt_form: [1, 2],
-          combination: [1, 2, 3, 4, 5],
-          step_match: [1, 2],
-          kick: ["front kick", "turn kick"],
-          sparring: "1:1",
-          breaking: ["palm", "front kick"],
-        },
-        red: {
-          palgwae: [],
-          taeguek: [],
-          white_belt_form: [1, 2],
-          combination: [1, 2, 3, 4, 5],
-          step_match: [1, 2],
-          kick: ["front kick", "turn kick"],
-          sparring: "1:1",
-          breaking: ["palm", "front kick"],
-        },
-        first_dan_evaluation: {
-          palgwae: [],
+        senior: {
+
+          palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
           combination: [1, 2, 3, 4, 5],
@@ -140,19 +109,10 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
       },
-      senior: {
-        white: {
-          palgwae: [],
-          taeguek: [],
-          white_belt_form: [1, 2],
-          combination: [1, 2, 3, 4, 5],
-          step_match: [1, 2],
-          kick: ["front kick", "turn kick"],
-          sparring: "1:1",
-          breaking: ["palm", "front kick"],
-        },
         yellow: {
-          palgwae: [],
+          junior: {
+
+          palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
           combination: [1, 2, 3, 4, 5],
@@ -161,38 +121,9 @@ const belt_test_requirements = [
           sparring: "1:1",
           breaking: ["palm", "front kick"],
         },
-        green: {
-          palgwae: [],
-          taeguek: [],
-          white_belt_form: [1, 2],
-          combination: [1, 2, 3, 4, 5],
-          step_match: [1, 2],
-          kick: ["front kick", "turn kick"],
-          sparring: "1:1",
-          breaking: ["palm", "front kick"],
-        },
-        blue: {
-          palgwae: [],
-          taeguek: [],
-          white_belt_form: [1, 2],
-          combination: [1, 2, 3, 4, 5],
-          step_match: [1, 2],
-          kick: ["front kick", "turn kick"],
-          sparring: "1:1",
-          breaking: ["palm", "front kick"],
-        },
-        red: {
-          palgwae: [],
-          taeguek: [],
-          white_belt_form: [1, 2],
-          combination: [1, 2, 3, 4, 5],
-          step_match: [1, 2],
-          kick: ["front kick", "turn kick"],
-          sparring: "1:1",
-          breaking: ["palm", "front kick"],
-        },
-        first_dan_evaluation: {
-          palgwae: [],
+        senior: {
+
+          palgwae: [1],
           taeguek: [],
           white_belt_form: [1, 2],
           combination: [1, 2, 3, 4, 5],
@@ -202,8 +133,104 @@ const belt_test_requirements = [
           breaking: ["palm", "front kick"],
         },
       },
-    },
-  },
+        green: {
+          junior: {
+
+          palgwae: [1],
+          taeguek: [],
+          white_belt_form: [1, 2],
+          combination: [1, 2, 3, 4, 5],
+          step_match: [1, 2],
+          kick: ["front kick", "turn kick"],
+          sparring: "1:1",
+          breaking: ["palm", "front kick"],
+        },
+        senior: {
+
+          palgwae: [1],
+          taeguek: [],
+          white_belt_form: [1, 2],
+          combination: [1, 2, 3, 4, 5],
+          step_match: [1, 2],
+          kick: ["front kick", "turn kick"],
+          sparring: "1:1",
+          breaking: ["palm", "front kick"],
+        },
+      },
+        blue: {
+          junior: {
+
+          palgwae: [1],
+          taeguek: [],
+          white_belt_form: [1, 2],
+          combination: [1, 2, 3, 4, 5],
+          step_match: [1, 2],
+          kick: ["front kick", "turn kick"],
+          sparring: "1:1",
+          breaking: ["palm", "front kick"],
+        },
+        senior: {
+
+          palgwae: [1],
+          taeguek: [],
+          white_belt_form: [1, 2],
+          combination: [1, 2, 3, 4, 5],
+          step_match: [1, 2],
+          kick: ["front kick", "turn kick"],
+          sparring: "1:1",
+          breaking: ["palm", "front kick"],
+        },
+      },
+        red: {
+          junior: {
+
+          palgwae: [1],
+          taeguek: [],
+          white_belt_form: [1, 2],
+          combination: [1, 2, 3, 4, 5],
+          step_match: [1, 2],
+          kick: ["front kick", "turn kick"],
+          sparring: "1:1",
+          breaking: ["palm", "front kick"],
+        },
+        senior: {
+
+          palgwae: [1],
+          taeguek: [],
+          white_belt_form: [1, 2],
+          combination: [1, 2, 3, 4, 5],
+          step_match: [1, 2],
+          kick: ["front kick", "turn kick"],
+          sparring: "1:1",
+          breaking: ["palm", "front kick"],
+        },
+      },
+        first_dan_evaluation: {
+          junior: {
+
+          palgwae: [1],
+          taeguek: [],
+          white_belt_form: [1, 2],
+          combination: [1, 2, 3, 4, 5],
+          step_match: [1, 2],
+          kick: ["front kick", "turn kick"],
+          sparring: "1:1",
+          breaking: ["palm", "front kick"],
+        },
+        senior: {
+
+          palgwae: [1],
+          taeguek: [],
+          white_belt_form: [1, 2],
+          combination: [1, 2, 3, 4, 5],
+          step_match: [1, 2],
+          kick: ["front kick", "turn kick"],
+          sparring: "1:1",
+          breaking: ["palm", "front kick"],
+        },
+      },
+    }
+  }
 ];
 
 const belt_colors = [
